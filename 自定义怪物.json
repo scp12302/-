@@ -2028,6 +2028,175 @@
      ]
     }
    ]
+  },
+  {
+   "name": "炼金走私匪徒",
+   "ENG_name": "Alchemical Smuggler",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": {
+    "type": "humanoid",
+    "tags": [
+     "任意种族"
+    ]
+   },
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    {
+     "ac": 14,
+     "from": [
+      "镶钉皮甲",
+      "炼金护具"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 45,
+    "formula": "7d8 + 14"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 11,
+   "dex": 16,
+   "con": 14,
+   "int": 12,
+   "wis": 10,
+   "cha": 10,
+   "save": {
+    "dex": "+5",
+    "con": "+4"
+   },
+   "skill": {
+    "stealth": "+5",
+    "sleight of hand": "+5",
+    "deception": "+3",
+    "perception": "+2"
+   },
+   "resist": [
+    "poison"
+   ],
+   "passive": 12,
+   "languages": [
+    "通用语",
+    "盗贼黑话"
+   ],
+   "cr": "2",
+   "trait": [
+    {
+     "name": "炼金抗性 Alchemical Resistance",
+     "ENG_name": "Alchemical Resistance",
+     "entries": [
+      "匪徒对毒素伤害具有抗性。此外，当它因毒素而进行豁免时，检定具有优势。"
+     ]
+    },
+    {
+     "name": "走私货袋 Smuggler's Satchel",
+     "ENG_name": "Smuggler's Satchel",
+     "entries": [
+      "匪徒随身携带一个装有危险炼金药剂与成瘾品的货袋。它可以用一个附赠动作从袋中取出一瓶药剂并立即使用或投掷（见下方“动作”部分）。货袋中通常有3~5瓶随机药剂，由DM决定。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "匪徒发动两次弯刀攻击，或一次弯刀攻击加一次轻弩攻击，或一次武器攻击加一次投掷药剂。"
+     ]
+    },
+    {
+     "name": "弯刀 Scimitar",
+     "ENG_name": "Scimitar",
+     "entries": [
+      "{@atkr m} {@hit 5}，触及5尺，单一目标。{@h}伤害：{@damage 1d6+3}（平均6）挥砍伤害。"
+     ]
+    },
+    {
+     "name": "轻弩 Light Crossbow",
+     "ENG_name": "Light Crossbow",
+     "entries": [
+      "{@atkr r} {@hit 5}，射程80/320尺，单一目标。{@h}伤害：{@damage 1d8+3}（平均7）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "投掷炼金药剂 Throw Alchemical Vial",
+     "ENG_name": "Throw Alchemical Vial",
+     "entries": [
+      "{@atkr r} {@hit 5}，射程30尺，单一目标或5尺半径区域。根据药剂类型产生不同效果（见下方“炼金药剂表”）。",
+      {
+       "type": "table",
+       "caption": "炼金药剂表",
+       "colLabels": [
+        "1d6",
+        "药剂类型",
+        "效果"
+       ],
+       "colStyles": [
+        "col-1 text-center",
+        "col-4",
+        "col-7"
+       ],
+       "rows": [
+        [
+         "1",
+         "腐蚀酸液",
+         "目标或5尺半径内每个生物进行{@dc 13}敏捷豁免，失败受{@damage 4d6}（平均14）强酸伤害，成功减半。"
+        ],
+        [
+         "2",
+         "致幻毒气",
+         "5尺半径内每个生物进行{@dc 13}体质豁免，失败陷入{@condition 中毒}状态1分钟，且在中毒期间攻击检定具有劣势。"
+        ],
+        [
+         "3",
+         "成瘾兴奋剂（匪徒自用）",
+         "匪徒恢复{@dice 3d6}（平均10）生命值，且在下一次攻击检定中具有优势。使用后匪徒陷入1分钟的{@condition 中毒}状态（攻击检定劣势）。"
+        ],
+        [
+         "4",
+         "燃烧瓶",
+         "目标或5尺半径内每个生物进行{@dc 13}敏捷豁免，失败受{@damage 3d6}（平均10）火焰伤害，成功减半。区域起火1分钟。"
+        ],
+        [
+         "5",
+         "麻痹毒液",
+         "目标进行{@dc 13}体质豁免，失败陷入{@condition 麻痹}状态1分钟（每回合结束重复豁免）。"
+        ],
+        [
+         "6",
+         "烟雾弹",
+         "10尺半径重度遮蔽，持续1分钟。匪徒可在烟雾中正常视物。"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "bonus": [
+    {
+     "name": "快速换弹 Quick Reload",
+     "ENG_name": "Quick Reload",
+     "entries": [
+      "匪徒可以拔出第二把轻弩或从货袋中再取出一瓶药剂。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "炼金烟雾 Alchemical Smoke",
+     "ENG_name": "Alchemical Smoke",
+     "entries": [
+      "当匪徒被攻击命中时，它可以打碎一瓶烟雾药剂，在自身周围10尺范围内制造重度遮蔽，持续至其下回合开始。匪徒可在烟雾中正常视物。"
+     ]
+    }
+   ]
   }
  ]
 }
