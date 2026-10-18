@@ -1,0 +1,1541 @@
+{
+ "monster": [
+  {
+   "name": "邪教执鞭者",
+   "ENG_name": "Cult Whip-Bearer",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "任意非善良阵营"
+   ],
+   "ac": [
+    14
+   ],
+   "hp": {
+    "average": 26,
+    "formula": "4d8 + 8"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 14,
+   "dex": 12,
+   "con": 14,
+   "int": 10,
+   "wis": 11,
+   "cha": 10,
+   "skill": {
+    "intimidation": "+4",
+    "religion": "+4"
+   },
+   "passive": 10,
+   "languages": [
+    "任意一门语言（通常是通用语）"
+   ],
+   "cr": "1",
+   "trait": [
+    {
+     "name": "黑暗忠诚 Dark Devotion",
+     "entries": [
+      "邪教徒为抵抗魅惑和恐慌而进行的豁免检定具有优势。"
+     ]
+    },
+    {
+     "name": "狂热冲锋 Fanatical Charge",
+     "entries": [
+      "若邪教徒在自己的回合开始时距离任一敌人至少20尺，其移动速度增加10尺，并且该回合内首次命中敌人时，额外造成{@damage 1d6}（平均3）点心灵伤害。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "重棒 Heavy Club",
+     "ENG_name": "Heavy Club",
+     "entries": [
+      "{@atkr m} {@hit 4}，触及5尺。{@h}伤害：{@damage 2d6+2}（平均9）钝击伤害。"
+     ]
+    }
+   ],
+   "bonus": [
+    {
+     "name": "自我鞭笞 Self-Flagellation",
+     "ENG_name": "Self-Flagellation",
+     "entries": [
+      "邪教徒对自己造成3点无法以任何方式减免的伤害。若如此做，其下一次武器攻击检定具有优势，且命中后额外造成5点伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "邪教低语者",
+   "ENG_name": "Cult Whisperer",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "任意非善良阵营"
+   ],
+   "ac": [
+    12
+   ],
+   "hp": {
+    "average": 13,
+    "formula": "3d8"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 10,
+   "dex": 12,
+   "con": 10,
+   "int": 10,
+   "wis": 14,
+   "cha": 10,
+   "skill": {
+    "deception": "+2",
+    "religion": "+4"
+   },
+   "passive": 12,
+   "languages": [
+    "任意一门语言（通常是通用语）"
+   ],
+   "cr": "1",
+   "trait": [
+    {
+     "name": "黑暗忠诚 Dark Devotion",
+     "entries": [
+      "邪教徒为抵抗魅惑和恐慌而进行的豁免检定具有优势。"
+     ]
+    },
+    {
+     "name": "邪教徒掩护 Cultist Cover",
+     "entries": [
+      "距离该邪教徒10尺内的其他邪教徒，在进行豁免检定时获得+1加值。"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "name": "施法 Spellcasting",
+     "ENG_name": "Spellcasting",
+     "type": "spellcasting",
+     "headerEntries": [
+      "邪教低语者作为3级施法者，其施法属性为感知（法术豁免{@dc 12}，法术攻击加值{@hit 4}）。它准备了以下法术：",
+      "戏法（随意）：{@spell 次级幻影}、{@spell 魔能爆}",
+      "1环（2次/日）：{@spell 造成伤口}、{@spell 灾祸术}"
+     ],
+     "ability": "wis",
+     "displayAs": "action"
+    }
+   ],
+   "action": [
+    {
+     "name": "弯刀 Scimitar",
+     "ENG_name": "Scimitar",
+     "entries": [
+      "{@atkr m} {@hit 3}，触及5尺。{@h}伤害：{@damage 1d6+1}（平均4）挥砍伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "邪教掌印使",
+   "ENG_name": "Cult Sigil-Bearer",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "任意非善良阵营"
+   ],
+   "ac": [
+    15
+   ],
+   "hp": {
+    "average": 45,
+    "formula": "6d8 + 18"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 12,
+   "dex": 14,
+   "con": 16,
+   "int": 12,
+   "wis": 14,
+   "cha": 14,
+   "skill": {
+    "deception": "+4",
+    "religion": "+5"
+   },
+   "passive": 12,
+   "languages": [
+    "任意一门语言（通常是通用语）"
+   ],
+   "cr": "2",
+   "trait": [
+    {
+     "name": "黑暗忠诚 Dark Devotion",
+     "entries": [
+      "邪教徒为抵抗魅惑和恐慌而进行的豁免检定具有优势。"
+     ]
+    },
+    {
+     "name": "仪式专注 Ritual Focus",
+     "entries": [
+      "邪教徒维持专注时，距离其20尺内的盟友在武器攻击和法术造成的伤害掷骰上获得+2加值。"
+     ]
+    },
+    {
+     "name": "邪恶印记 Unholy Mark",
+     "entries": [
+      "每场战斗一次，邪教徒可以以一个附赠动作标记30尺内它能看见的一个生物。此后直到该印记消散前，所有其他邪教徒对标记目标进行的攻击检定具有优势。印记持续1分钟（可专注维持）。"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "name": "施法 Spellcasting",
+     "ENG_name": "Spellcasting",
+     "type": "spellcasting",
+     "headerEntries": [
+      "邪教掌印使作为4级施法者，其施法属性为感知（法术豁免{@dc 13}，法术攻击加值{@hit 5}）。它准备了以下法术：",
+      "1环（3次/日）：{@spell 命令术}、{@spell 祝福术}（仅能对非善良阵营生物使用）、{@spell 信仰之盾}"
+     ],
+     "ability": "wis",
+     "displayAs": "action"
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "邪教掌印使发动两次近战攻击。"
+     ]
+    },
+    {
+     "name": "弯刀 Scimitar",
+     "ENG_name": "Scimitar",
+     "entries": [
+      "{@atkr m} {@hit 4}，触及5尺。{@h}伤害：{@damage 1d6+3}（平均6）挥砍伤害。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "痛苦链接 Pain Link",
+     "ENG_name": "Pain Link",
+     "entries": [
+      "当距离邪教徒30尺内的其他邪教徒受到伤害时，掌印使可以选择承受其中一半伤害（向上取整），目标则承受剩余部分。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "精英地精",
+   "ENG_name": "Elite Goblin",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "S"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    17
+   ],
+   "hp": {
+    "average": 28,
+    "formula": "8d6"
+   },
+   "speed": {
+    "walk": 30,
+    "climb": 20
+   },
+   "str": 10,
+   "dex": 16,
+   "con": 12,
+   "int": 10,
+   "wis": 8,
+   "cha": 8,
+   "skill": {
+    "stealth": "+7"
+   },
+   "passive": 9,
+   "languages": [
+    "通用语",
+    "地精语"
+   ],
+   "cr": "2",
+   "trait": [
+    {
+     "name": "迅捷逃生 Nimble Escape",
+     "entries": [
+      "地精可在自己的回合，以一个附赠动作执行撤离{@i Disengage}或躲藏{@i Hide}动作。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "弯刀 Scimitar",
+     "ENG_name": "Scimitar",
+     "entries": [
+      "{@atkr m} {@hit 5}，触及5尺。{@h}伤害：{@damage 2d6+3}（平均10）挥砍伤害。"
+     ]
+    },
+    {
+     "name": "短弓 Shortbow",
+     "ENG_name": "Shortbow",
+     "entries": [
+      "{@atkr r} {@hit 5}，射程80/320尺。{@h}伤害：{@damage 2d6+3}（平均10）穿刺伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "地精恶徒",
+   "ENG_name": "Goblin Ruffian",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "S"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    16
+   ],
+   "hp": {
+    "average": 14,
+    "formula": "4d6"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 8,
+   "dex": 18,
+   "con": 10,
+   "int": 10,
+   "wis": 8,
+   "cha": 8,
+   "skill": {
+    "stealth": "+8"
+   },
+   "passive": 9,
+   "languages": [
+    "通用语",
+    "地精语"
+   ],
+   "cr": "1",
+   "trait": [
+    {
+     "name": "偷袭 Sneak Attack",
+     "entries": [
+      "每回合一次，当地精恶徒的攻击检定具有优势时，其命中后额外造成{@damage 2d6}（平均7）点伤害。"
+     ]
+    },
+    {
+     "name": "扰乱打击 Disrupting Strike",
+     "entries": [
+      "当地精恶徒用武器攻击命中一个生物且该次攻击未触发偷袭时，目标在下一次攻击检定中具有劣势。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "弯刀 Scimitar",
+     "ENG_name": "Scimitar",
+     "entries": [
+      "{@atkr m} {@hit 6}，触及5尺。{@h}伤害：{@damage 1d6+4}（平均7）挥砍伤害。"
+     ]
+    },
+    {
+     "name": "短弓 Shortbow",
+     "ENG_name": "Shortbow",
+     "entries": [
+      "{@atkr r} {@hit 6}，射程80/320尺。{@h}伤害：{@damage 1d6+4}（平均7）穿刺伤害。"
+     ]
+    }
+   ],
+   "bonus": [
+    {
+     "name": "迅捷逃生 Nimble Escape",
+     "ENG_name": "Nimble Escape",
+     "entries": [
+      "地精恶徒可在自己的回合，以一个附赠动作执行撤离{@i Disengage}或躲藏{@i Hide}动作。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "地精战智者",
+   "ENG_name": "Goblin Battlemind",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "S"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    18
+   ],
+   "hp": {
+    "average": 45,
+    "formula": "10d6 + 10"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 12,
+   "dex": 18,
+   "con": 14,
+   "int": 12,
+   "wis": 10,
+   "cha": 10,
+   "skill": {
+    "stealth": "+8",
+    "perception": "+4"
+   },
+   "passive": 14,
+   "languages": [
+    "通用语",
+    "地精语"
+   ],
+   "cr": "3",
+   "trait": [
+    {
+     "name": "战术撤退 Tactical Retreat",
+     "entries": [
+      "地精战智者使用撤离动作后，可额外移动最多15尺。"
+     ]
+    },
+    {
+     "name": "“抓啊！” Git 'Em!",
+     "entries": [
+      "每回合开始时，地精战智者可以选择30尺内一个它能看见的其他地精。直到该回合结束前，被选中的地精进行的下一次攻击检定具有优势。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "地精战智者发动两次弯刀或短弓攻击。"
+     ]
+    },
+    {
+     "name": "弯刀 Scimitar",
+     "ENG_name": "Scimitar",
+     "entries": [
+      "{@atkr m} {@hit 6}，触及5尺。{@h}伤害：{@damage 2d6+4}（平均11）挥砍伤害。"
+     ]
+    },
+    {
+     "name": "短弓 Shortbow",
+     "ENG_name": "Shortbow",
+     "entries": [
+      "{@atkr r} {@hit 6}，射程80/320尺。{@h}伤害：{@damage 2d6+4}（平均11）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "烟雾弹 Smoke Bomb",
+     "ENG_name": "Smoke Bomb",
+     "entries": [
+      "地精战智者将一颗烟雾弹投向30尺内它所能看见的一点。以该点为中心、半径10尺的区域内被重云雾{@i heavily obscured}笼罩，持续1分钟。地精战智者和它选择的其他地精不受该云雾影响。（充能5-6）"
+     ]
+    }
+   ],
+   "bonus": [
+    {
+     "name": "迅捷逃生 Nimble Escape",
+     "ENG_name": "Nimble Escape",
+     "entries": [
+      "地精战智者可在自己的回合，以一个附赠动作执行撤离{@i Disengage}或躲藏{@i Hide}动作。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "邪恶魔法师",
+   "ENG_name": "Evil Mage",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "守序邪恶"
+   ],
+   "ac": [
+    15
+   ],
+   "hp": {
+    "average": 55,
+    "formula": "10d8 + 10"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 9,
+   "dex": 14,
+   "con": 12,
+   "int": 18,
+   "wis": 12,
+   "cha": 11,
+   "save": {
+    "int": "+7",
+    "wis": "+4"
+   },
+   "skill": {
+    "arcana": "+8",
+    "history": "+8",
+    "perception": "+4"
+   },
+   "passive": 14,
+   "languages": [
+    "通用语",
+    "龙语",
+    "矮人语",
+    "精灵语"
+   ],
+   "cr": "4",
+   "spellcasting": [
+    {
+     "ENG_name": "Spellcasting",
+     "name": "施法",
+     "type": "spellcasting",
+     "headerEntries": [
+      "邪恶魔法师作为6级施法者。其施法关键属性为智力（法术豁免{@dc 15}，法术攻击命中{@hit 7}）。它准备了下列法师法术："
+     ],
+     "will": [
+      "{@spell 光亮术}",
+      "{@spell 法师之手}",
+      "{@spell 电爪}",
+      "{@spell 火焰箭}"
+     ],
+     "daily": {
+      "1": [
+       "{@spell 法师护甲}",
+       "{@spell 魔法飞弹}",
+       "{@spell 护盾术}",
+       "{@spell 燃烧之手}"
+      ],
+      "2": [
+       "{@spell 人类定身术}",
+       "{@spell 迷踪步}",
+       "{@spell 灼热射线}",
+       "{@spell 隐形术}"
+      ],
+      "3": [
+       "{@spell 火球术}",
+       "{@spell 反制法术}",
+       "{@spell 臭云术}"
+      ]
+     },
+     "ability": "int",
+     "displayAs": "action"
+    }
+   ],
+   "action": [
+    {
+     "name": "长棍 Quarterstaff",
+     "ENG_name": "Quarterstaff",
+     "entries": [
+      "{@atkr m} {@hit 2}，触及5尺。{@h}伤害：{@damage 1d8-1}（平均3）钝击伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "高阶燃焰之颅",
+   "ENG_name": "Greater Flameskull",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "T"
+   ],
+   "type": "undead",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    16
+   ],
+   "hp": {
+    "average": 78,
+    "formula": "12d4 + 48"
+   },
+   "speed": {
+    "fly": 50,
+    "hover": true
+   },
+   "str": 1,
+   "dex": 19,
+   "con": 18,
+   "int": 18,
+   "wis": 12,
+   "cha": 13,
+   "save": {
+    "int": "+7",
+    "wis": "+4",
+    "cha": "+4"
+   },
+   "skill": {
+    "arcana": "+7",
+    "perception": "+4"
+   },
+   "passive": 14,
+   "languages": [
+    "通用语"
+   ],
+   "cr": "6",
+   "trait": [
+    {
+     "name": "照明 Illumination",
+     "entries": [
+      "燃焰之颅散发出15尺半径微光光照，或者15尺明亮光照以及其外15尺的微光光照。它可以用一个动作在两者间转换。"
+     ]
+    },
+    {
+     "name": "魔法抗性 Magic Resistance",
+     "entries": [
+      "燃焰之颅进行对抗法术和其他魔法效应的豁免检定时具有优势。"
+     ]
+    },
+    {
+     "name": "复生 Rejuvenation",
+     "entries": [
+      "被破坏的燃焰之颅将在1小时后恢复所有生命值，除非在其遗体洒上圣水，或对其施展三环或更高环位的{@spell 解除魔法}或{@spell 移除诅咒}。"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "ENG_name": "Spellcasting",
+     "name": "施法",
+     "type": "spellcasting",
+     "headerEntries": [
+      "燃焰之颅作为一名8级施法者，其施法关键属性为智力（法术豁免{@dc 15}，法术攻击命中{@hit 7}）。它施法时不需要任何动作或材料构材。燃焰之颅准备了下列法师法术："
+     ],
+     "will": [
+      "{@spell 法师之手}",
+      "{@spell 火焰箭}",
+      "{@spell 绿焰之剑}"
+     ],
+     "daily": {
+      "1": [
+       "{@spell 魔法飞弹}",
+       "{@spell 护盾术}",
+       "{@spell 燃烧之手}"
+      ],
+      "2": [
+       "{@spell 朦胧术}",
+       "{@spell 炽焰法球}",
+       "{@spell 灼热射线}"
+      ],
+      "3": [
+       "{@spell 火球术}",
+       "{@spell 法术反制}",
+       "{@spell 加速术}"
+      ],
+      "4": [
+       "{@spell 火焰护盾}",
+       "{@spell 变形术}（只对自身使用，通常变为更大体型的不死生物）"
+      ]
+     },
+     "ability": "int",
+     "displayAs": "action"
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "燃焰之颅发动三次火焰射线攻击，或者两次火焰射线攻击外加一次施法。"
+     ]
+    },
+    {
+     "name": "火焰射线 Fire Ray",
+     "ENG_name": "Fire Ray",
+     "entries": [
+      "{@atkr r} {@hit 7}，射程60尺。{@h}伤害：{@damage 4d6}（平均14）火焰伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "食尸鬼啃食者",
+   "ENG_name": "Ghastly Devourer",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "undead",
+   "alignment": [
+    "混乱邪恶"
+   ],
+   "ac": [
+    15
+   ],
+   "hp": {
+    "average": 65,
+    "formula": "10d8 + 20"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 16,
+   "dex": 17,
+   "con": 14,
+   "int": 7,
+   "wis": 12,
+   "cha": 8,
+   "save": {
+    "str": "+6",
+    "con": "+5"
+   },
+   "skill": {
+    "perception": "+4",
+    "stealth": "+6"
+   },
+   "passive": 14,
+   "languages": [
+    "通用语"
+   ],
+   "cr": "3",
+   "trait": [
+    {
+     "name": "恶臭 Stench",
+     "entries": [
+      "任何生物在食尸鬼啃食者10尺内开始其回合时，必须通过一次{@dc 14}的体质豁免，否则陷入中毒状态直至该回合结束。中毒期间该生物不能执行附赠动作。"
+     ]
+    },
+    {
+     "name": "啃噬狂热 Ravenous Frenzy",
+     "entries": [
+      "食尸鬼啃食者对处于麻痹或中毒状态的生物进行攻击时，攻击检定具有优势，且每次命中额外造成{@damage 2d6}（平均7）点黯蚀伤害。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "食尸鬼啃食者发动一次啃咬和两次爪击。"
+     ]
+    },
+    {
+     "name": "啃咬 Bite",
+     "ENG_name": "Bite",
+     "entries": [
+      "{@atkr m} {@hit 6}，触及5尺。{@h}伤害：{@damage 2d10+4}（平均15）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "爪击 Claws",
+     "ENG_name": "Claws",
+     "entries": [
+      "{@atkr m} {@hit 6}，触及5尺。{@h}伤害：{@damage 2d6+4}（平均11）挥砍伤害。如果目标不是精灵也不是不死生物，则该目标必须进行一次{@dc 14}的体质豁免，豁免失败则陷入1分钟的麻痹状态。目标可以在每个自己的回合结束时再次进行豁免，豁免成功则终止自己身上的该效应。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "深穴攫怪",
+   "ENG_name": "Deep Grick",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "monstrosity",
+   "alignment": [
+    "绝对中立"
+   ],
+   "ac": [
+    17
+   ],
+   "hp": {
+    "average": 75,
+    "formula": "10d8 + 30"
+   },
+   "speed": {
+    "walk": 40,
+    "climb": 40
+   },
+   "str": 18,
+   "dex": 16,
+   "con": 16,
+   "int": 3,
+   "wis": 14,
+   "cha": 5,
+   "save": {
+    "str": "+7",
+    "con": "+6"
+   },
+   "passive": 12,
+   "languages": [
+    "—"
+   ],
+   "cr": "4",
+   "trait": [
+    {
+     "name": "岩地伪装 Stone Camouflage",
+     "entries": [
+      "穴居攫怪在岩石地形中进行的敏捷（隐匿）检定具有优势。"
+     ]
+    },
+    {
+     "name": "酸蚀黏液 Caustic Slime",
+     "entries": [
+      "任何用近战武器击中穴居攫怪的生物，其武器会受到{@damage 2d4}点强酸伤害（忽略抗性）。非魔法武器因此获得-1减值，累积最多-3，之后被摧毁。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "穴居攫怪使用触须发动两次攻击，如果至少一次命中，则它可以对同一目标再发动一次喙啄攻击。"
+     ]
+    },
+    {
+     "name": "触须 Tentacles",
+     "ENG_name": "Tentacles",
+     "entries": [
+      "{@atkr m} {@hit 7}，触及10尺。{@h}伤害：{@damage 2d8+6}（平均15）挥砍伤害。若目标为中型或更小，则被擒抱（逃脱{@dc 15}）。被擒抱期间，目标受到触须的自动伤害。"
+     ]
+    },
+    {
+     "name": "喙啄 Beak",
+     "ENG_name": "Beak",
+     "entries": [
+      "{@atkr m} {@hit 7}，触及5尺。{@h}伤害：{@damage 2d4+6}（平均11）穿刺伤害外加{@damage 2d6}（平均7）强酸伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "高阶缚灵·墨梅斯克",
+   "ENG_name": "Greater Wraith Moemesk",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "undead",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    16
+   ],
+   "hp": {
+    "average": 95,
+    "formula": "10d8 + 50"
+   },
+   "speed": {
+    "fly": 60,
+    "hover": true
+   },
+   "str": 6,
+   "dex": 19,
+   "con": 20,
+   "int": 14,
+   "wis": 16,
+   "cha": 18,
+   "save": {
+    "con": "+8",
+    "int": "+5",
+    "cha": "+7"
+   },
+   "skill": {
+    "perception": "+9",
+    "stealth": "+7"
+   },
+   "passive": 19,
+   "languages": [
+    "通用语",
+    "炼狱语"
+   ],
+   "cr": "5",
+   "trait": [
+    {
+     "name": "虚体移动 Incorporeal Movement",
+     "entries": [
+      "缚灵可以如同穿过困难地形一样穿过其他生物和物件。如果它在自己的回合结束时仍处在物件内部则受到{@damage 1d10}（平均5）的力场伤害。"
+     ]
+    },
+    {
+     "name": "日照敏感 Sunlight Sensitivity",
+     "entries": [
+      "处于阳光下时，缚灵进行攻击检定，以及进行依赖视觉的感知（察觉）检定时具有劣势。"
+     ]
+    },
+    {
+     "name": "生命汲取生命线 Life Drain Aura",
+     "entries": [
+      "缚灵周围10尺内的生物在其回合开始时必须通过一次{@dc 15}的体质豁免，否则受到{@damage 3d6}（平均10）点黯蚀伤害，且缚灵获得等量临时生命。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "缚灵发动两次吸取生命攻击。"
+     ]
+    },
+    {
+     "name": "吸取生命 Life Drain",
+     "ENG_name": "Life Drain",
+     "entries": [
+      "{@atkr m} {@hit 8}，触及5尺。{@h}伤害：{@damage 4d8+4}（平均22）的黯蚀伤害。目标必须成功通过一次{@dc 15}的体质豁免检定，否则其生命值上限将承受等于该伤害数值的减损，且缚灵恢复10点生命值。该减损效应持续至该目标完成一次长休。如果该效应将目标的生命值上限降至0，则目标死亡并立刻作为{@creature 幽灵|PHB}（由DM控制）复活。"
+     ]
+    },
+    {
+     "name": "创造幽灵 Create Specter",
+     "ENG_name": "Create Specter",
+     "entries": [
+      "缚灵指定周边30尺内一个因它而死的类人生物遗体，该生物在1d4小时后作为{@creature 幽灵|PHB}复活。（短休或长休后充能）"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "暗影蜘蛛·涅兹纳尔",
+   "ENG_name": "Nezznar the Shadow Spider",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    17
+   ],
+   "hp": {
+    "average": 85,
+    "formula": "10d8 + 40"
+   },
+   "speed": {
+    "walk": 30,
+    "climb": 30
+   },
+   "str": 10,
+   "dex": 16,
+   "con": 14,
+   "int": 18,
+   "wis": 14,
+   "cha": 15,
+   "save": {
+    "int": "+7",
+    "wis": "+5",
+    "cha": "+5"
+   },
+   "skill": {
+    "arcana": "+7",
+    "perception": "+8",
+    "stealth": "+9"
+   },
+   "passive": 18,
+   "languages": [
+    "精灵语",
+    "地底通用语",
+    "深渊语"
+   ],
+   "cr": "4",
+   "trait": [
+    {
+     "name": "特殊装备 Special Equipment",
+     "entries": [
+      "涅兹纳尔拥有一把+1蜘蛛法杖。"
+     ]
+    },
+    {
+     "name": "精类血统 Fey Ancestry",
+     "entries": [
+      "涅兹纳尔为抵抗魅惑和魔法引起的睡眠而作的豁免检定具有优势。"
+     ]
+    },
+    {
+     "name": "日照敏感 Sunlight Sensitivity",
+     "entries": [
+      "受阳光照射时，涅兹纳尔的攻击检定，以及依赖视觉而作的感知（察觉）检定具有劣势。"
+     ]
+    },
+    {
+     "name": "蛛行 Spider Climb",
+     "entries": [
+      "涅兹纳尔无需进行属性检定就能攀爬于困难表面，包括倒挂在天花板上。"
+     ]
+    },
+    {
+     "name": "天生施法 Innate Spellcasting",
+     "entries": [
+      "涅兹纳尔的天生施法能力基于魅力（法术豁免{@dc 13}）。它可以天生施展以下法术且不需要任何材料构材：",
+      "{@spell 戏法（随意）：舞光术}",
+      "{@spell 每项1/日：黑暗术，妖火（豁免DC 13），蛛行术}"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "ENG_name": "Spellcasting",
+     "name": "施法",
+     "type": "spellcasting",
+     "headerEntries": [
+      "涅兹纳尔作为6级施法者，施法关键属性为智力（法术豁免{@dc 15}，法术攻击命中{@hit 7}）。他准备了以下法师法术："
+     ],
+     "will": [
+      "{@spell 法师之手}",
+      "{@spell 冰冻射线}",
+      "{@spell 电爪}",
+      "{@spell 毒气喷溅}"
+     ],
+     "daily": {
+      "1": [
+       "{@spell 法师护甲}",
+       "{@spell 魔法飞弹}",
+       "{@spell 护盾术}",
+       "{@spell 塔莎狂笑术}"
+      ],
+      "2": [
+       "{@spell 隐形术}",
+       "{@spell 暗示术}",
+       "{@spell 蛛网术}",
+       "{@spell 迷踪步}"
+      ],
+      "3": [
+       "{@spell 法术反制}",
+       "{@spell 吸血鬼之触}",
+       "{@spell 召唤次级恶魔}"
+      ]
+     },
+     "ability": "int",
+     "displayAs": "action"
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "涅兹纳尔发动两次蜘蛛法杖攻击，或一次施法外加一次法杖攻击。"
+     ]
+    },
+    {
+     "name": "+1蜘蛛法杖 Spider Staff",
+     "ENG_name": "Spider Staff",
+     "entries": [
+      "{@atkr m} {@hit 7}，触及5尺。{@h}伤害：{@damage 1d6+4}（平均7）钝击伤害外加{@damage 3d6}（平均10）毒素伤害。"
+     ]
+    }
+   ],
+   "bonus": [
+    {
+     "name": "暗影传送 Shadow Step",
+     "ENG_name": "Shadow Step",
+     "entries": [
+      "涅兹纳尔处于微光或黑暗环境中时，可以传送到60尺内另一个处于微光或黑暗中的未被占据空间。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "高阶诺斯异怪",
+   "ENG_name": "Greater Nothic",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "aberration",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    18
+   ],
+   "hp": {
+    "average": 102,
+    "formula": "12d8 + 48"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 16,
+   "dex": 18,
+   "con": 18,
+   "int": 15,
+   "wis": 14,
+   "cha": 10,
+   "save": {
+    "con": "+7",
+    "wis": "+5"
+   },
+   "skill": {
+    "arcana": "+5",
+    "insight": "+8",
+    "perception": "+8",
+    "stealth": "+10"
+   },
+   "passive": 18,
+   "languages": [
+    "地底通用语",
+    "深渊语"
+   ],
+   "cr": "4",
+   "trait": [
+    {
+     "name": "敏锐视觉 Keen Sight",
+     "entries": [
+      "诺斯异怪依赖视力进行的感知（察觉）检定具有优势。"
+     ]
+    },
+    {
+     "name": "邪恶凝视 Baleful Gaze",
+     "entries": [
+      "任何在诺斯异怪30尺内开始其回合且与诺斯异怪有视线连接的生物，必须通过一次{@dc 14}的感知豁免，否则直到其下个回合开始前，该生物对诺斯异怪的武器攻击具有劣势，且诺斯异怪对其施放的腐朽凝视具有优势。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "诺斯异怪发动三次爪击，或两次爪击加一次腐朽凝视。"
+     ]
+    },
+    {
+     "name": "爪击 Claw",
+     "ENG_name": "Claw",
+     "entries": [
+      "{@atkr m} {@hit 7}，触及5尺。{@h}伤害：{@damage 2d6+5}（平均12）挥砍伤害。"
+     ]
+    },
+    {
+     "name": "腐朽凝视 Rotting Gaze",
+     "ENG_name": "Rotting Gaze",
+     "entries": [
+      "诺斯异怪指定其周边30尺内一个它能看到的生物。该目标必须成功通过一次{@dc 15}的体质豁免以抵抗该魔法，否则将受{@damage 5d6}（平均17）的黯蚀伤害。若目标因此伤害而生命值降至0，则其身体彻底腐烂，无法被复活（除了{@spell 完全复生术}或{@spell 许愿术}）。"
+     ]
+    },
+    {
+     "name": "怪异洞悉 Weird Insight",
+     "ENG_name": "Weird Insight",
+     "entries": [
+      "诺斯异怪指定其周边30尺内一个它能看到的生物。该目标必须以其魅力（欺瞒）检定对抗该诺斯异怪的感知（洞悉）检定。如果诺斯异怪胜出，则它以魔法得知一件与目标相关的事实或秘密（包括抗性、弱点、当前生命值范围或一个秘密）。如果目标免疫魅惑，则它将在该检定对抗中直接胜出。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "扭曲魔法 Twist Magic",
+     "ENG_name": "Twist Magic",
+     "entries": [
+      "当诺斯异怪60尺内的一个生物施展法术时，诺斯异怪可以尝试打断。它进行一次智力检定（{@dc 10 + 法术环位}），成功则法术被反制，且施法者受到{@damage 2d6}点心灵伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "分裂赭冻怪",
+   "ENG_name": "Ochre Jelly Splitter",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "L"
+   ],
+   "type": "ooze",
+   "alignment": [
+    "无阵营"
+   ],
+   "ac": [
+    10
+   ],
+   "hp": {
+    "average": 120,
+    "formula": "16d10 + 32"
+   },
+   "speed": {
+    "walk": 15,
+    "climb": 15
+   },
+   "str": 18,
+   "dex": 7,
+   "con": 18,
+   "int": 2,
+   "wis": 6,
+   "cha": 1,
+   "save": {
+    "str": "+7",
+    "con": "+7"
+   },
+   "passive": 8,
+   "languages": [
+    "—"
+   ],
+   "cr": "4",
+   "trait": [
+    {
+     "name": "无定形 Amorphous",
+     "entries": [
+      "赭冻怪能够轻松穿过最窄1寸宽的狭窄空间而不用挤进去。"
+     ]
+    },
+    {
+     "name": "蛛行 Spider Climb",
+     "entries": [
+      "赭冻怪无需进行属性检定就能攀爬于困难表面，包括倒挂在天花板上。"
+     ]
+    },
+    {
+     "name": "强酸体表 Acidic Body",
+     "entries": [
+      "任何在赭冻怪身边5尺内擒抱它、被它擒抱或徒手命中它的生物，受到{@damage 1d10}（平均5）点强酸伤害。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "赭冻怪发动两次伪足攻击。"
+     ]
+    },
+    {
+     "name": "伪足 Pseudopod",
+     "ENG_name": "Pseudopod",
+     "entries": [
+      "{@atkr m} {@hit 7}，触及10尺。{@h}伤害：{@damage 2d8+4}（平均13）钝击伤害外加{@damage 2d6}（平均7）强酸伤害。目标必须通过一次{@dc 15}的敏捷豁免，否则非魔法盔甲或武器（由攻击者选择）受到永久-1减值（累积最多-3），然后被摧毁。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "分裂 Split",
+     "ENG_name": "Split",
+     "entries": [
+      "当一只中型或更大体型的赭冻怪受到闪电或挥砍伤害，而此时其生命值至少为15时，它可以作为反应立即分裂成两个新的赭冻怪。每一只新的赭冻怪拥有原赭冻怪一半的生命值（向下取整）。新的赭冻怪比原来的体型小一级。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "凶暴枭熊",
+   "ENG_name": "Dire Owlbear",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "L"
+   ],
+   "type": "monstrosity",
+   "alignment": [
+    "无阵营"
+   ],
+   "ac": [
+    16
+   ],
+   "hp": {
+    "average": 120,
+    "formula": "16d10 + 32"
+   },
+   "speed": {
+    "walk": 40
+   },
+   "str": 22,
+   "dex": 12,
+   "con": 18,
+   "int": 3,
+   "wis": 13,
+   "cha": 7,
+   "save": {
+    "str": "+9",
+    "con": "+7"
+   },
+   "skill": {
+    "perception": "+7"
+   },
+   "passive": 17,
+   "languages": [
+    "—"
+   ],
+   "cr": "5",
+   "trait": [
+    {
+     "name": "敏锐视嗅觉 Keen Sight and Smell",
+     "entries": [
+      "枭熊依赖视觉或嗅觉进行的感知（察觉）检定具有优势。"
+     ]
+    },
+    {
+     "name": "凶暴狂暴 Dire Rage",
+     "entries": [
+      "当凶暴枭熊的生命值降至一半（60 HP）以下时，它进入狂暴状态。狂暴期间，它的近战攻击造成额外{@damage 2d6}（平均7）点伤害，但它对自身5尺外目标的攻击具有劣势。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "凶暴枭熊发动两次爪击和一次喙啄攻击。"
+     ]
+    },
+    {
+     "name": "喙啄 Beak",
+     "ENG_name": "Beak",
+     "entries": [
+      "{@atkr m} {@hit 9}，触及5尺。{@h}伤害：{@damage 2d12+5}（平均18）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "爪击 Claws",
+     "ENG_name": "Claws",
+     "entries": [
+      "{@atkr m} {@hit 9}，触及5尺。{@h}伤害：{@damage 2d8+7}（平均16）挥砍伤害。若目标为中型或更小，需通过{@dc 17}的力量豁免，否则被击倒{@condition 倒地}。"
+     ]
+    }
+   ],
+   "bonus": [
+    {
+     "name": "战吼 Battle Roar",
+     "ENG_name": "Battle Roar",
+     "entries": [
+      "凶暴枭熊发出震耳欲聋的怒吼，周边30尺内所有敌人都必须通过一次{@dc 15}的感知豁免，否则陷入{@condition 恐慌}状态，持续1分钟。被恐慌的生物可以在其每个回合结束时重复豁免。（短休后充能）"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "红标帮杀手",
+   "ENG_name": "Redbrand Slayer",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "humanoid",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    16
+   ],
+   "hp": {
+    "average": 45,
+    "formula": "7d8 + 14"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 12,
+   "dex": 18,
+   "con": 14,
+   "int": 10,
+   "wis": 10,
+   "cha": 12,
+   "save": {
+    "dex": "+7",
+    "con": "+5"
+   },
+   "skill": {
+    "intimidation": "+4",
+    "stealth": "+7",
+    "perception": "+3"
+   },
+   "passive": 13,
+   "languages": [
+    "通用语"
+   ],
+   "cr": "2",
+   "trait": [
+    {
+     "name": "偷袭 Sneak Attack",
+     "entries": [
+      "每回合一次，当红标帮杀手对目标具有优势时，或目标周围5尺内有其盟友且该杀手没有劣势时，额外造成{@damage 3d6}（平均10）点伤害。"
+     ]
+    },
+    {
+     "name": "多打一 Guttersnipe",
+     "entries": [
+      "当红标帮杀手周围5尺内有至少两个敌人时，它的AC获得+2加值。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "红标帮杀手发动两次短剑攻击。"
+     ]
+    },
+    {
+     "name": "短剑 Shortsword",
+     "ENG_name": "Shortsword",
+     "entries": [
+      "{@atkr m} {@hit 7}，触及5尺。{@h}伤害：{@damage 1d6+4}（平均7）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "手弩 Hand Crossbow",
+     "ENG_name": "Hand Crossbow",
+     "entries": [
+      "{@atkr r} {@hit 7}，射程30/120尺。{@h}伤害：{@damage 1d6+4}（平均7）穿刺伤害。"
+     ]
+    }
+   ],
+   "bonus": [
+    {
+     "name": "快速撤退 Cunning Action",
+     "ENG_name": "Cunning Action",
+     "entries": [
+      "红标帮杀手可执行撤离{@i Disengage}、躲藏{@i Hide}或疾走{@i Dash}动作。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "并肩战斗 Pack Tactics",
+     "ENG_name": "Pack Tactics",
+     "entries": [
+      "当红标帮杀手5尺内的一个盟友被近战攻击命中时，杀手可对该攻击者进行一次借机攻击（若该攻击者在射程内）。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "高等观察者眼魔",
+   "ENG_name": "Greater Spectator",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "aberration",
+   "alignment": [
+    "守序邪恶"
+   ],
+   "ac": [
+    17
+   ],
+   "hp": {
+    "average": 95,
+    "formula": "10d8 + 50"
+   },
+   "speed": {
+    "fly": 40,
+    "hover": true
+   },
+   "str": 10,
+   "dex": 12,
+   "con": 20,
+   "int": 14,
+   "wis": 16,
+   "cha": 14,
+   "save": {
+    "con": "+8",
+    "wis": "+6",
+    "int": "+5"
+   },
+   "skill": {
+    "perception": "+9"
+   },
+   "passive": 19,
+   "languages": [
+    "深潜语",
+    "地底通用语"
+   ],
+   "cr": "5",
+   "trait": [
+    {
+     "name": "悬浮 Hover",
+     "entries": [
+      "观察者眼魔活着的时候保持悬浮。"
+     ]
+    },
+    {
+     "name": "心灵感应 Telepathy",
+     "entries": [
+      "观察者眼魔可以用自己掌握的语言与120尺内的任何生物进行心灵感应沟通。"
+     ]
+    },
+    {
+     "name": "法术反射 Spell Reflection",
+     "entries": [
+      "与原始特性相同，但豁免DC后反射距离扩展至60尺。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "啃咬 Bite",
+     "ENG_name": "Bite",
+     "entries": [
+      "{@atkr m} {@hit 4}，触及5尺。{@h}伤害：{@damage 1d6}（平均3）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "眼波射线 Eye Ray",
+     "ENG_name": "Eye Ray",
+     "entries": [
+      "高等观察者眼魔从下列选项中选择发射三束魔法眼波射线，并指定身边120尺内它可以看到的一到三个目标。每种射线在两个回合内只能使用一次：",
+      "1. 困惑射线{@i Confusion Ray}：目标必须进行一次{@dc 15}的感知豁免，豁免失败者直至其下回合结束前都无法执行任何反应。该生物在其自己回合中将无法移动，并使用其动作对可及范围内随机的某个生物发动一次近战或远程攻击。如果受术目标无法攻击，则其在自己回合中什么都不做。",
+      "2. 麻痹射线{@i Paralyzing Ray}：目标必须进行一次{@dc 15}的体质豁免，豁免失败者将陷入1分钟的{@condition 麻痹}。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。",
+      "3. 恐惧射线{@i Fear Ray}：目标必须进行一次{@dc 15}的感知豁免，豁免失败者将陷入1分钟的{@condition 恐慌}状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。",
+      "4. 致伤射线{@i Wounding Ray}：目标必须进行一次{@dc 15}的体质豁免，豁免失败者将受到{@damage 4d10}（平均21）的黯蚀伤害，豁免成功则伤害减半。",
+      "5. 解离射线{@i Disintegration Ray}（充能5-6）：目标必须进行一次{@dc 15}的敏捷豁免，豁免失败者受到{@damage 8d10}（平均40）的力场伤害。如果该伤害将目标生命值降至0，则目标及其携带的所有非魔法物品被完全解离。"
+     ]
+    },
+    {
+     "name": "造粮 Create Food and Water",
+     "ENG_name": "Create Food and Water",
+     "entries": [
+      "观察者眼魔以魔法制造足够维持自己24小时供给的食物和饮用水。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "法术反射 Spell Reflection",
+     "ENG_name": "Spell Reflection",
+     "entries": [
+      "如果观察者眼魔通过了对法术的豁免检定，或者对其发动的法术攻击未命中时，它可以指定身边60尺范围内一个它能看见的其他生物（包括施法者）。如果该法术迫使目标进行豁免检定，则被指定的生物必须自行进行豁免。如果该法术发动一次攻击，则该法术必须对被指定生物重掷攻击检定。"
+     ]
+    }
+   ]
+  }
+ ]
+}
