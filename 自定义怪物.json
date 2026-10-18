@@ -1640,6 +1640,394 @@
      ]
     }
    ]
+  },
+  {
+   "name": "诅咒食尸鬼",
+   "ENG_name": "Ghoul",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "undead",
+   "alignment": [
+    "混乱邪恶"
+   ],
+   "ac": [
+    12
+   ],
+   "hp": {
+    "average": 22,
+    "formula": "5d8"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 13,
+   "dex": 15,
+   "con": 10,
+   "int": 7,
+   "wis": 10,
+   "cha": 6,
+   "immune": [
+    "poison"
+   ],
+   "conditionImmune": [
+    "charmed",
+    "exhaustion",
+    "poisoned"
+   ],
+   "senses": [
+    "黑暗视觉60尺"
+   ],
+   "passive": 10,
+   "languages": [
+    "通用语"
+   ],
+   "cr": "1",
+   "trait": [
+    {
+     "name": "自爆 Death Burst",
+     "ENG_name": "Death Burst",
+     "entries": [
+      "食尸鬼死亡时，它的尸体会爆炸成一团苍白火焰，其周围5尺范围内的所有生物必须进行一次{@dc 10}的敏捷豁免，豁免失败者将受到{@damage 2d8}点暗蚀伤害，豁免成功则伤害减半。"
+     ]
+    },
+    {
+     "name": "复生 Rejuvenation",
+     "ENG_name": "Rejuvenation",
+     "entries": [
+      "食尸鬼被摧毁后，它将在{@dice 1d4}天后获得一个新的身体。新身体出现在多瑞森祭坛周边5尺范围内，其恢复所有的生命值。若在此期间祭坛被洒上圣水，则它复生的时间会延迟至{@dice 10d4}天。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "啃咬 Bite",
+     "ENG_name": "Bite",
+     "entries": [
+      "{@atkr m} {@hit 2}，触及5尺，单一目标。{@h}伤害：{@damage 2d6+2}（平均9）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "爪击 Claws",
+     "ENG_name": "Claws",
+     "entries": [
+      "{@atkr m} {@hit 4}，触及5尺，单一目标。{@h}伤害：{@damage 2d4+2}（平均7）挥砍伤害。如果目标不是精灵也不是不死生物，则该目标必须进行一次{@dc 10}的体质豁免，豁免失败则陷入1分钟的{@condition 麻痹}状态。目标可以在每个自己的回合结束时再次进行豁免，豁免成功则终止该效应。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "达尔尼",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "S"
+   ],
+   "type": {
+    "type": "humanoid",
+    "tags": [
+     "迪洛矮人"
+    ]
+   },
+   "alignment": [
+    "混乱邪恶"
+   ],
+   "ac": [
+    {
+     "ac": 13,
+     "from": [
+      "皮甲"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 49,
+    "formula": "11d6 + 11"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 9,
+   "dex": 14,
+   "con": 12,
+   "int": 14,
+   "wis": 5,
+   "cha": 11,
+   "skill": {
+    "stealth": "+4"
+   },
+   "senses": [
+    "黑暗视觉120尺"
+   ],
+   "passive": 7,
+   "languages": [
+    "矮人语",
+    "通用语"
+   ],
+   "cr": "3",
+   "trait": [
+    {
+     "name": "癫狂 Insanity",
+     "ENG_name": "Insanity",
+     "entries": [
+      "迪洛矮人进行对抗{@condition 魅惑}或{@condition 恐慌}的豁免检定时具有优势。"
+     ]
+    },
+    {
+     "name": "魔法抗性 Magic Resistance",
+     "ENG_name": "Magic Resistance",
+     "entries": [
+      "迪洛矮人进行对抗法术和魔法效果的豁免检定时具有优势。"
+     ]
+    },
+    {
+     "name": "阳光敏感性 Sunlight Sensitivity",
+     "ENG_name": "Sunlight Sensitivity",
+     "entries": [
+      "在阳光照射下，迪洛矮人的攻击骰具有劣势，同时依靠视力的感知（察觉）检定也具有劣势。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "带钩短矛 Hooked Shortspear",
+     "ENG_name": "Hooked Shortspear",
+     "entries": [
+      "{@atkr m} {@hit 2}，触及5尺，单一目标。{@h}伤害：{@damage 1d4-1}（平均1）穿刺伤害。如果目标是生物，迪洛矮人可以选择尝试绊倒目标，并取消所造成的伤害，此时目标必须进行一个{@dc 9}的力量豁免检定，豁免失败时目标{@condition 倒地}。"
+     ]
+    },
+    {
+     "name": "连发轻弩 Light Repeating Crossbow",
+     "ENG_name": "Light Repeating Crossbow",
+     "entries": [
+      "{@atkr r} {@hit 4}，射程40/160尺，单一目标。{@h}伤害：{@damage 1d8+2}（平均6）穿刺伤害。"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "name": "施法 Spellcasting",
+     "ENG_name": "Spellcasting",
+     "type": "spellcasting",
+     "headerEntries": [
+      "迪洛矮人作为一名5级施法者。他的施法能力基于智力（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。迪洛矮人准备并学习了法师法术列表中的以下法术："
+     ],
+     "spells": {
+      "0": {
+       "spells": [
+        "{@spell 酸液飞溅}",
+        "{@spell 光亮术}",
+        "{@spell 法师之手}",
+        "{@spell 传讯术}",
+        "{@spell 冰冻射线}"
+       ]
+      },
+      "1": {
+       "slots": 4,
+       "spells": [
+        "{@spell 燃烧之手}",
+        "{@spell 繁彩球}",
+        "{@spell 睡眠术}"
+       ]
+      },
+      "2": {
+       "slots": 3,
+       "spells": [
+        "{@spell 隐形术}",
+        "{@spell 蛛行术}"
+       ]
+      },
+      "3": {
+       "slots": 2,
+       "spells": [
+        "{@spell 闪现术}",
+        "{@spell 闪电束}"
+       ]
+      }
+     },
+     "ability": "int"
+    }
+   ]
+  },
+  {
+   "name": "克莉思薇雅·踏沙",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": {
+    "type": "humanoid",
+    "tags": [
+     "半精灵"
+    ]
+   },
+   "alignment": [
+    "混乱中立"
+   ],
+   "ac": [
+    {
+     "ac": 13,
+     "from": [
+      "皮甲"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 16,
+    "formula": "3d8 + 3"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 11,
+   "dex": 14,
+   "con": 12,
+   "int": 11,
+   "wis": 13,
+   "cha": 11,
+   "skill": {
+    "nature": "+4",
+    "perception": "+5",
+    "stealth": "+6",
+    "survival": "+5"
+   },
+   "passive": 15,
+   "languages": [
+    "通用语",
+    "精灵语"
+   ],
+   "cr": "1/2",
+   "trait": [
+    {
+     "name": "精类血统 Fey Ancestry",
+     "ENG_name": "Fey Ancestry",
+     "entries": [
+      "克莉思薇雅抵抗{@condition 魅惑}时进行的豁免检定具有优势，并且不会因魔法效应而陷入睡眠。"
+     ]
+    },
+    {
+     "name": "敏锐视听觉 Keen Hearing and Sight",
+     "ENG_name": "Keen Hearing and Sight",
+     "entries": [
+      "克莉思薇雅依赖听觉或视觉所作的感知（察觉）检定具有优势。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "克莉思薇雅发动两次近战攻击，或两次远程攻击。"
+     ]
+    },
+    {
+     "name": "短剑 Shortsword",
+     "ENG_name": "Shortsword",
+     "entries": [
+      "{@atkr m} {@hit 4}，触及5尺，单一目标。{@h}伤害：{@damage 1d6+2}（平均5）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "长弓 Longbow",
+     "ENG_name": "Longbow",
+     "entries": [
+      "{@atkr r} {@hit 4}，射程150/600尺，单一目标。{@h}伤害：{@damage 1d8+2}（平均6）穿刺伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "吉卡鲁塔·踏沙",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "undead",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    13
+   ],
+   "hp": {
+    "average": 36,
+    "formula": "8d8"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 16,
+   "dex": 17,
+   "con": 10,
+   "int": 17,
+   "wis": 10,
+   "cha": 10,
+   "resist": [
+    "necrotic"
+   ],
+   "immune": [
+    "poison"
+   ],
+   "conditionImmune": [
+    "charmed",
+    "exhaustion",
+    "poisoned"
+   ],
+   "senses": [
+    "黑暗视觉60尺"
+   ],
+   "passive": 10,
+   "languages": [
+    "通用语"
+   ],
+   "cr": "2",
+   "trait": [
+    {
+     "name": "自爆 Death Burst",
+     "ENG_name": "Death Burst",
+     "entries": [
+      "妖鬼死亡时，它的尸体会爆炸成一团苍白火焰，其周围5尺范围内的所有生物必须进行一次{@dc 10}的敏捷豁免，豁免失败者将受到{@damage 2d8}点暗蚀伤害，豁免成功则伤害减半。"
+     ]
+    },
+    {
+     "name": "复生 Rejuvenation",
+     "ENG_name": "Rejuvenation",
+     "entries": [
+      "妖鬼被摧毁后，它将在{@dice 1d4}天后获得一个新的身体。新身体出现在多瑞森祭坛周边5尺范围内，其恢复所有的生命值。若在此期间祭坛被洒上圣水，则它复生的时间会延迟至{@dice 10d4}天。"
+     ]
+    },
+    {
+     "name": "驱散蔑视 Turning Defiance",
+     "ENG_name": "Turning Defiance",
+     "entries": [
+      "妖鬼和其身边30尺内的食尸鬼们对抗驱散效应时，进行的豁免检定具有优势。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "啃咬 Bite",
+     "ENG_name": "Bite",
+     "entries": [
+      "{@atkr m} {@hit 3}，触及5尺，单一目标。{@h}伤害：{@damage 2d8+3}（平均12）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "爪击 Claws",
+     "ENG_name": "Claws",
+     "entries": [
+      "{@atkr m} {@hit 5}，触及5尺，单一目标。{@h}伤害：{@damage 2d6+3}（平均10）挥砍伤害。如果目标不是不死生物，则目标必须进行一次{@dc 10}的体质豁免，豁免失败则陷入1分钟的{@condition 麻痹}状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。"
+     ]
+    }
+   ]
   }
  ]
 }
